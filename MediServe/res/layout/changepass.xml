@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Username:" />
+    <EditText
+        android:id="@+id/username"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Old Password:"
+        />
+    <EditText
+        android:id="@+id/oldpassword"
+        android:password="true"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Password:"
+        />
+    <EditText
+        android:id="@+id/newpassword"
+        android:password="true"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password:"
+        />
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:password="true"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:id="@+id/ok_button"
+        android:text="OK"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:id="@+id/cancel_button"
+        android:text="Cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:id="@+id/changePass_button"
+        android:text="Change Password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+	    android:id="@+id/result"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+</LinearLayout>
