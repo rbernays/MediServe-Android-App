@@ -2,22 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="@string/bluebkgd">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Username:" />
+        android:text="Username:" 
+        android:textColor="#000000"
+        android:background="#ffffff"/>
     <EditText
         android:id="@+id/username"
         android:singleLine="true"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:text="User ID"
+        android:textColor="#000000"
+        android:background="#ffffff"
         />
     <TextView 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Old Password:"
+        android:textColor="#000000"
+        android:background="#ffffff"
         />
     <EditText
         android:id="@+id/oldpassword"
@@ -25,11 +33,15 @@
         android:singleLine="true"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:background="#ffffff"
         />
     <TextView 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="New Password:"
+        android:textColor="#000000"
+        android:background="#ffffff"
         />
     <EditText
         android:id="@+id/newpassword"
@@ -37,11 +49,15 @@
         android:singleLine="true"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:background="#ffffff"       
         />
     <TextView 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Confirm Password:"
+        android:textColor="#000000"
+        android:background="#ffffff"
         />
     <EditText
         android:id="@+id/confirmpassword"
@@ -49,24 +65,24 @@
         android:singleLine="true"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:background="#ffffff"
         />
     <Button 
         android:id="@+id/ok_button"
         android:text="OK"
-        android:layout_width="fill_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:textColor="#ff0000ff"
+        android:background="@layout/buttonshape1"
         />
     <Button 
         android:id="@+id/cancel_button"
         android:text="Cancel"
-        android:layout_width="fill_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        />
-    <Button 
-        android:id="@+id/changePass_button"
-        android:text="Change Password"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:textColor="#ff0000ff"
+        android:background="@layout/buttonshape1"
         />
     <TextView
 	    android:id="@+id/result"
