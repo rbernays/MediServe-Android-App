@@ -35,7 +35,7 @@ public class MediServe extends Activity {
         		
         		if(username.equals("guest") && password.equals("guest")){
         			lblResult.setText("Login successful.");
-        			Intent i = new Intent(MediServe.this, PatientInfo.class);
+        			Intent i = new Intent(MediServe.this, FindPatients.class);
         			startActivity(i);
         		} else {
         			lblResult.setText("Login failed. Username and/or password doesn't match.");

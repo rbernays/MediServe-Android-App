@@ -5,6 +5,11 @@
     android:id="@+id/tabHost"
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
+    <TextView
+        android:id="@+id/patientname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Name" />
     <TabWidget
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -18,46 +23,57 @@
      <LinearLayout
      android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/tab1"
+    android:id="@+id/planofcare"
     android:orientation="vertical"
     android:paddingTop="60px"
      >
-     <TextView
-    android:layout_width="fill_parent"
-    android:layout_height="100px"
-    android:text="This is tab1"
-    android:id="@+id/txt1"
-    />
+     <Button 
+        android:id="@+id/add_problem_button"
+        android:text="Add Problem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:id="@+id/add_intervention_button"
+        android:text="Add Intervention"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
 
      </LinearLayout>
 
      <LinearLayout
      android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:id="@+id/tab2"
+    android:id="@+id/education"
     android:orientation="vertical"
     android:paddingTop="60px"
      >
-     <TextView
-    android:layout_width="fill_parent"
-    android:layout_height="100px"
-    android:text="This is tab 2"
-    android:id="@+id/txt2"
-    />
-
+    <Button 
+        android:id="@+id/add_education_button"
+        android:text="Add Education"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:id="@+id/add_caregiver_button"
+        android:text="Add Caregiver"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
      </LinearLayout>
 
       <LinearLayout
      android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:id="@+id/tab3"
+    android:id="@+id/information"
     android:orientation="vertical"
     android:paddingTop="60px"
      >
      <TextView
     android:layout_width="fill_parent"
     android:layout_height="100px"
-    android:text="This is tab 3"
+    android:text="Information"
     android:id="@+id/txt3"
     />
 

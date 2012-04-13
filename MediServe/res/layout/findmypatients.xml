@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TabHost android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tabHost"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+     <FrameLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@android:id/tabcontent"
+     >
+     <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/find_patients"
+    android:orientation="vertical"
+    android:paddingTop="60px"
+     >
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/searchText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+        
+                <Button
+                        android:id="@+id/searchButton"
+                        android:text="Search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ListView 
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+            
+</LinearLayout>
+
+
+     </LinearLayout>
+
+     <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/my_patients"
+    android:orientation="vertical"
+    android:paddingTop="60px"
+     >
+    <Button 
+        android:id="@+id/add_patient_button"
+        android:text="+"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+     </LinearLayout>
+
+      
+     </FrameLayout>
+
+    <TabWidget
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@android:id/tabs"
+    />
+    </TabHost>
