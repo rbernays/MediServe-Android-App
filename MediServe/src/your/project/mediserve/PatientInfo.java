@@ -3,15 +3,21 @@ package your.project.mediserve;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 
 public class PatientInfo extends Activity{
+	private String patientname;
+	private EditText patient;
 
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patientinformation);
+        patientname = getIntent().getStringExtra("PATIENT_NAME");
+        patient = (EditText)findViewById(R.id.patientname);
+        
         TabHost tabHost=(TabHost)findViewById(R.id.tabHost);
         tabHost.setup();
 

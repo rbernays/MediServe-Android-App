@@ -2,6 +2,7 @@ package your.project.mediserve;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -17,6 +18,8 @@ import android.view.View.OnClickListener;
 public class FindPatients extends Activity {
 
 	protected String[] patients = {"Christophe Coenraets", "John Smith"};
+	private ListAdapter adapter;
+	private ListView patientList;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -37,9 +40,17 @@ public class FindPatients extends Activity {
         tabHost.addTab(spec1);
         tabHost.addTab(spec2);
         
-        ListAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, patients);
-        ListView patientList = (ListView) findViewById(R.id.list);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, patients);
+        patientList = (ListView) findViewById(R.id.list);
         patientList.setAdapter(adapter);
 
 	}
+	
+	 public void onListItemClick(ListView parent, View view, int position, long id) {
+	        Intent intent = new Intent(this, PatientInfo.class);
+	        Cursor cursor = (Cursor) adapter.getItem(position);
+	        intent.putExtra("PATIENT_NAME", cursor.getInt(cursor.getColumnIndex("_id")));
+	        startActivity(intent);
+	    }
+
 }
